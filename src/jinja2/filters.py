@@ -250,7 +250,7 @@ def do_items(value: t.Union[t.Mapping[K, V], Undefined]) -> t.Iterator[t.Tuple[K
 
 # Check for characters that would move the parser state from key to value.
 # https://html.spec.whatwg.org/#attribute-name-state
-_attr_key_re = re.compile(r\"[\s/>=]\", flags=re.ASCII)
+_attr_key_re = re.compile(r"[\s/>=]", flags=re.ASCII)
 
 
 @pass_eval_context
